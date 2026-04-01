@@ -2,6 +2,10 @@
 __pycache__/
 *.pyc
 
+# Python cache
+__pycache__/
+*.pyc
+
 # Pytest
 .pytest_cache/
 
