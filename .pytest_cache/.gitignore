@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Pytest
+.pytest_cache/
+
+# Environment
+.env
+
+# Database
+weather.db
+
+# OS / misc
+.DS_Store

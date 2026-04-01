@@ -1,0 +1,4 @@
+[
+  "tests/test_weather.py::test_fetch_weather",
+  "tests/test_weather.py::test_history"
+]
