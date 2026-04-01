@@ -8,12 +8,12 @@ from datetime import datetime
 def fetch_and_store():
     db = SessionLocal()
 
-    print("\n⏰ Scheduler running at:", datetime.now())
+    print("\n Scheduler running at:", datetime.now())
 
     cities = ["bangalore", "chennai", "delhi"]
 
     for city in cities:
-        print(f"\n📡 Fetching weather for {city}...")
+        print(f"\n Fetching weather for {city}...")
 
         data = fetch_weather_from_api(city)
 
@@ -28,10 +28,10 @@ def fetch_and_store():
                 date=data["date"]
             )
 
-            print(f"✅ Stored weather for {city} → Temp: {data['temperature']}°C")
+            print(f"Stored weather for {city} → Temp: {data['temperature']}°C")
 
         else:
-            print(f"❌ Failed to fetch data for {city}")
+            print(f" Failed to fetch data for {city}")
 
     print("✅ Scheduler cycle completed\n")
 
